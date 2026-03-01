@@ -1,6 +1,6 @@
 <html class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
 <head>
-	<title>Untitled</title>
+	<title>Hi/Max Real Estate</title>
 	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
 	<script
 		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
@@ -28,7 +28,7 @@
 <body>
 
 	</div>
-	<div> <!-- start of header-->
+	<header role="banner"> <!-- start of header-->
 
 				<div class="app-bar">
 			<div class="container">
@@ -41,8 +41,8 @@
 			</div>
 		</div>
 
-
-		<div id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
+		<!-- added main nav role and aria-label for accessibility -->
+		<nav id="wb-sm" aria-label="Main Navigation" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
 			class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
 			typeof="SiteNavigationElement">
 			<div class="pnl-strt container nvbar">
@@ -64,11 +64,12 @@
 			</div>
 
 
-		</div> <!-- end of main navigation-->
+		</nav> <!-- end of main navigation-->
 
-	</div> <!-- end of header-->
+	</header> <!-- end of header-->
 
-	<main property="mainContentOfPage" class="container">
+	<!-- added main role and property for accessibility -->	
+	<main id="main-content" role="main" property="mainContentOfPage" class="container">
 		<h1>Welcome</h1>
 		<p>Content A here</p>
 		<div class="row">
@@ -104,12 +105,14 @@
 		</div>
 
 
-	</main>
-	<div id="wb-info" class=" wb-navcurr-inited">
+	</main><!-- end of main content-->
+	<!-- added footer label and aria-label for accessibility -->
+	<footer id="wb-info" aria-label="Footer information">
 		<div class="gc-sub-footer">
 			<div class="container d-flex align-items-center">
 				<div>
 					<h3 class="wb-inv" id="aboutWebApp">Hi/Max Real Estate</h3>
+					<nav aria-label=" Footer Navigation">
 					<ul>
 						<li><a href="#">About the company</a></li>
 						<li><a href="#">Privacy policy</a></li>
@@ -120,6 +123,7 @@
 						</svg></a></li>
 						
 					  </ul>	
+					</nav>
 				</div>
 
 				<div class="col-xs-6 visible-sm visible-xs tofpg">
@@ -128,7 +132,7 @@
 
 			</div>
 		</div>
-	</div> <!-- end of footer-->
+	</footer> <!-- end of footer-->
 
 	<script>
 		var defFooter = document.getElementById("def-footer");
