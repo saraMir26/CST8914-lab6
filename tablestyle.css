@@ -16,7 +16,7 @@ section {
 }
 .row.align-items-stretch section {
     height: auto;
-    display: flex;
+    display: block;
     flex-direction: column;
 }
 
