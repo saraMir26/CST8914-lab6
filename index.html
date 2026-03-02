@@ -97,43 +97,49 @@
         				HI/MAX is extremely community focused, and our agents are too!
     				</p>
 					<h3>Stats of HI/Max</h3>
-					<table id="himax-stats" >
-					<col>
-        			<colgroup span="2"></colgroup>
-       				<colgroup span="2"></colgroup>
+					<table id="himax-stats">
+    					<col>
+    					<colgroup span="2"></colgroup>
+   						<colgroup span="2"></colgroup>
 
-       				<thead>
-            				<tr>
-             	  				<th rowspan="2" scope="col">Year</th>
-            				    <th colspan="2" scope="colgroup">Sold Properties</th>
-                				<th colspan="2" scope="colgroup">Average selling price</th>
-            				</tr>
+    					<thead>
+							<tr>
+								<th rowspan="2" id="year">Year</th>
 
-            				<tr>
-                				<th scope="col">Quebec</th>
-                				<th scope="col">Ontario</th>
-                				<th scope="col">Single house</th>
-                				<th scope="col">Condo</th>
-            				</tr>
-        			</thead>
+								<th colspan="2" id="sold">Sold Properties</th>
+								<th colspan="2" id="avg">Average Selling Price</th>
+							</tr>
 
-        			<tbody>
-            				<tr>
-               					<th scope="row">2021</th>
-                				<td>50</td>
-                				<td>100</td>
-                				<td>$500,000</td>
-                				<td>189,000</td>
-            				</tr>
+							<tr>
+								<th id="qc" headers="sold">Quebec</th>
+								<th id="on" headers="sold">Ontario</th>
 
-            				<tr>
-                				<th scope="row">2022</th>
-                				<td>100</td>
-                				<td>200</td>
-                				<td>$780,000</td>
-                				<td>240,000</td>
-            				</tr>
-        			</tbody>
+								<th id="house" headers="avg">Single House</th>
+								<th id="condo" headers="avg">Condo</th>
+							</tr>
+    					</thead>
+
+    					<tbody>
+        					<tr>
+								<th id="y2021" headers="year">2021</th>
+
+								<td headers="sold qc y2021">50</td>
+								<td headers="sold on y2021">100</td>
+
+								<td headers="avg house y2021">$500,000</td>
+								<td headers="avg condo y2021">189,000</td>
+							</tr>
+
+							<tr>
+								<th id="y2022" headers="year">2022</th>
+
+								<td headers="sold qc y2022">100</td>
+								<td headers="sold on y2022">200</td>
+
+								<td headers="avg house y2022">$780,000</td>
+								<td headers="avg condo y2022">240,000</td>
+							</tr>
+						</tbody>
 					</table>
 				</section> <!-- end of section c -->
 			</div>

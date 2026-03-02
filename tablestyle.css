@@ -25,5 +25,11 @@ article {
     padding: 20px;
     height: auto;
     border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
    
+}
+.section-b section {
+    border-left: none !important;
+    border-bottom: none !important;
+    
 }
