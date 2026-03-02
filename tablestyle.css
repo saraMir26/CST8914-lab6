@@ -1,0 +1,29 @@
+#himax-stats,
+#himax-stats th,
+#himax-stats td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+#himax-stats th,
+#himax-stats td {
+    padding: 6px;
+}
+section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    
+}
+.row.align-items-stretch section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+   
+    padding: 20px;
+    height: auto;
+    border-right: 1px solid #ccc;
+   
+}
